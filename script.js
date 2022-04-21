@@ -1,4 +1,7 @@
-const slides = [
+const app = new Vue({
+el: '#app',
+data:{
+    slides:[
     {
         image: 'img/01.jpg',
         title: 'Svezia',
@@ -24,6 +27,25 @@ const slides = [
         title: 'Paradise',
         text: 'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam, cumque provident totam omnis.',
     }
-];
+],
+activeIndex:0
+},
+methods:{
+    nextSlide(){
+        if(this.activeIndex === 4){
+            this.activeIndex = 0;
+        }else{
+            this.activeIndex -1;
+        }
 
-console.log(slides);
+    },
+    prevSlide(){
+        this.intervalId = setInterval(()=>{
+            this.nextSlide();
+        },1000)
+    }
+
+}
+
+
+})
