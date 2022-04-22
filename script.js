@@ -35,7 +35,7 @@ methods:{
         if(this.activeIndex === 4){
             this.activeIndex = 0;
         }else{
-            this.activeIndex -1;
+            this.activeIndex += 1;
         }
 
     },
