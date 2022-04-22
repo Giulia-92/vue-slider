@@ -29,6 +29,7 @@ data:{
     }
 ],
 activeIndex:0
+ 
 },
 methods:{
     nextSlide(){
@@ -39,10 +40,10 @@ methods:{
         }
 
     },
-    prevSlide(){
-        this.intervalId = setInterval(()=>{
-            this.nextSlide();
-        },1000)
+    //prevSlide(){
+        //this.intervalId = setInterval(()=>{
+            //this.nextSlide();
+        //},1000)
     }
 
 }
