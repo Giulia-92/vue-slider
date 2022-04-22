@@ -44,7 +44,7 @@ methods:{
         //this.intervalId = setInterval(()=>{
             //this.nextSlide();
         //},1000)
-    }
+    //}
 
 }
 
